@@ -38,7 +38,7 @@ export default {
     name:"NavBar",
     setup(){
       const route = useRoute();
-      let route_name = computed(()=>route.name);
+      let route_name = computed(()=>route.name);//当页面变化时，捕获到当前的route.name
       return{
         route_name,
 
